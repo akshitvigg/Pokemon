@@ -13,13 +13,13 @@
     </header>
 
     <div class="input-container">
-      <input type="text" id="type" placeholder="Enter Pokémon type" onfocus="populateTypes()">
+      <input type="text" id="type" placeholder="Enter Pokémon type" oninput="showSuggestions()" onfocus="populateTypes()">
       <input type="number" id="numberofpoke" placeholder="Number of Pokémon">
       <button onclick="getpokemon()">Find Pokémon</button>
+      <div id="suggestions-container" class="suggestions"></div> <!-- Suggestions container -->
     </div>
 
     <div id="mainConta" class="pokemon-container">
-
     </div>
   </div>
 
